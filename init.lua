@@ -30,4 +30,4 @@ require("lazy").setup("plugins", {
   checker = { enabled = true },
 })
 
-vim.cmd.colorscheme "koehler"
+vim.cmd.colorscheme "koehler" --Hello
