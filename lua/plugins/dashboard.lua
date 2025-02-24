@@ -20,8 +20,8 @@ return {
 					'',
 				}
 			},
-			project = { enable = true, limit = 4, icon = '-> ', label = '', action = 'Telescope find_files cwd=' },
-
+			project = { enable = false },
+				
 
 			hide = {
 				statusline,   -- hide statusline default is true
