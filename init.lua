@@ -1,4 +1,5 @@
 vim.opt.number	= true
+-- Normal vim configs for normal vim settings
 vim.opt.signcolumn = 'yes'
 vim.opt.relativenumber= true
 -- Make sure to setup `mapleader` and `maplocalleader` before
@@ -6,9 +7,9 @@ vim.opt.relativenumber= true
 -- This is also a good place to setup other settings (vim.opt)
 vim.g.mapleader = " "
 vim.g.maplocalleader = "\\"
+vim.opt.clipboard = "unnamedplus"
 vim.o.autochdir = true
-require("config.options")
+vim.o.updatetime = 300
 require("config.keybinds")
 require("config.lazy")
-
 vim.cmd.colorscheme "catppuccin"
