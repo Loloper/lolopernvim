@@ -2,10 +2,12 @@
 return {
 	{
 		--LSP package manager
-		"williamboman/mason.nvim",
-		config = function()
-			require("mason").setup()
-		end
+		"mason-org/mason.nvim",
+		opts = {
+			automatic_installation = true,
+			ui = {border = "shadow"}
+		}
+
 	},
 	{
 		--Configs for each LSP
