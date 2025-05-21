@@ -1,15 +1,24 @@
+print("CVIM: V0.5")
+
 vim.opt.number	= true
 -- Normal vim configs for normal vim settings
 vim.opt.signcolumn = 'yes'
 vim.opt.relativenumber= true
--- Make sure to setup `mapleader` and `maplocalleader` before
--- loading lazy.nvim so that mappings are correct.
--- This is also a good place to setup other settings (vim.opt)
-vim.g.mapleader = " "
+vim.opt.splitright = true
+vim.opt.splitbelow = true
+vim.opt.wrap = false
+vim.opt.scrolloff = 999
+vim.opt.virtualedit = "block"
+vim.opt.inccommand = "split"
+vim.opt.ignorecase = true
+vim.opt.termguicolors = true
+vim.g.mapleader = "  " -- double space for leader
 vim.g.maplocalleader = "\\"
 vim.opt.clipboard = "unnamedplus"
 vim.o.autochdir = true
 vim.o.updatetime = 300
+
+-- other files
 require("config.keybinds")
 require("config.lazy")
-vim.cmd.colorscheme "catppuccin"
+vim.cmd.colorscheme("catppuccin")
